@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Box, Typography, Button, TextField, Grid, Paper, Alert } from '@mui/material';
-import { useCart } from '../../contexts/CartContext';
+import { useCart } from '@/contexts/CartContext';
 import styles from './Checkout.module.scss';
 
 export const Checkout = () => {

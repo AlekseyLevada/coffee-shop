@@ -1,7 +1,7 @@
 import { Box, Typography, Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, IconButton, TextField } from '@mui/material';
 import { Delete as DeleteIcon } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
-import { useCart } from '../../contexts/CartContext';
+import { useCart } from '@/contexts/CartContext';
 import styles from './Cart.module.scss';
 
 export const Cart = () => {
