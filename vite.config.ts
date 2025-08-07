@@ -3,12 +3,11 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-// Получаем текущий каталог
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [react()],
-  base: '/coffee-shop/',
+  base: process.env.NODE_ENV === 'production' ? '/coffee-shop/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
