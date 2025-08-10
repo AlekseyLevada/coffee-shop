@@ -8,7 +8,7 @@ export const fetchHotCoffees = async (): Promise<Coffee[]> => {
   const data = await response.json();
   return data.map((coffee: Coffee) => ({
     ...coffee,
-    price: Math.floor(Math.random() * 10) + 5, // Генерируем случайную цену
+    price: Math.floor(Math.random() * 10) + 5,
   }));
 };
 
